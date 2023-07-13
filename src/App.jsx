@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { addToOrder, removeFromOrder, updateOrderQuantity } from './redux/reducer';
 import './App.css'
 import Home from './home'
 import FoodOrder from './food-order'
 import OrderSummary from './order-summary'
 import Header from './header'
+import OrderHistory from './order-history';
 
 
 function App() {
 
-  const [orderItems, setOrderItems] = useState([]);
+  const orderItems = useSelector((state) => state.order.orderItems);
+
 
   return (
     <>
@@ -17,8 +21,9 @@ function App() {
         <Header />
         <Routes>
           <Route path='/home' element={<Home />} />
-          <Route path='/food-order' element={<FoodOrder orderItems={orderItems} setOrderItems={setOrderItems} />} />
-          <Route path='/order-summary' element={<OrderSummary orderItems={orderItems} setOrderItems={setOrderItems} />} />
+          <Route path='/food-order' element={<FoodOrder  />} />
+          <Route path='/order-summary' element={<OrderSummary />} />
+          <Route path='/order-history' element={<OrderHistory />} />
         </Routes>
       </Router>
     </>
