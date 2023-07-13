@@ -7,6 +7,11 @@ export default makeStyles()({
         height: 'calc(100vh - 64px)',
         position: 'relative',
         zIndex: 1,
+        display: 'flex',
+        justifyContent:'center',
+        alignItems:'center',
+        flexDirection: 'column',
+        color:'black',
         '&::before':{
             content: "''",
             position: 'absolute',
@@ -18,6 +23,12 @@ export default makeStyles()({
             opacity: .8,
             zIndex: -1,
         },
+    },
+    container:{
+        padding: 10,
+        background: '#000000bd',
+        color: 'white',
+        textAlign: 'center'
     },
 
 })
