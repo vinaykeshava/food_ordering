@@ -40,9 +40,9 @@ This is a web application for ordering food online. The project is built using t
 
 ## API Endpoints
 
-1. **GET /menu**: Retrieves the menu items.
-2. **POST /order**: Stores order details.
-3. **GET /orders**: Retrieves order details.
+1. **GET /menu/getItems**: Retrieves the menu items.
+2. **POST /menu/orders**: Stores order details.
+3. **GET /menu/orders**: Retrieves order details.
 
 ## Screenshots
 
@@ -59,6 +59,3 @@ This is a web application for ordering food online. The project is built using t
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
