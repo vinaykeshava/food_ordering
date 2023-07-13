@@ -46,6 +46,9 @@ This is a web application for ordering food online. The project is built using t
 
 ## Screenshots
 
+![Home](/output/home.png)
+*Caption: Screenshot of the home page.*
+
 ![Menu](/output/Food%20order.png)
 *Caption: Screenshot of the menu page.*
 
